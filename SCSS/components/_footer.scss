@@ -1,0 +1,41 @@
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a3c40c5;
+    padding: 2rem;
+    .img-logo {
+        width: 6rem;
+        height: 6rem;
+    }
+    ul {
+        list-style: none;
+        li {
+            padding: 5px;
+            a {
+                text-decoration: none;
+                color: #E5EFC1;
+                font-weight: bold;
+                text-shadow: 1px 1px black;
+                font-size: 1rem;
+                &:hover {
+                    color: #22577E;
+                    text-shadow: none;
+                    transition: 1s;}
+                .foot-img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    div {
+        a {
+            padding: 1rem;
+            .foot-img {
+                width: 2rem;
+                height: 2rem;
+        }
+    }
+}
+}
