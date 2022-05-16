@@ -1,6 +1,7 @@
+@import '../base/variables';
 header {
     .bg-nav {
-        background-color: #1a3c40c5;
+        background-color: $background-color-hf;
         div {
             a {
                 img {

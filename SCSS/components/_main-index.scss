@@ -1,0 +1,15 @@
+@import '../base/extends';
+@import '../base/variables';
+.main {
+    @extend %index-main;
+    div {
+        h1 {
+            font-size: $font-size-titulo;
+            font-family: $font-family-general;
+            p {
+                font-size: 3rem;
+                font-family: 'Ubuntu', sans-serif;   
+            }
+        }
+    }
+}
