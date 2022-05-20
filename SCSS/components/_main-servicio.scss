@@ -1,0 +1,30 @@
+main {
+    @extend %resto-main;
+    h2 {
+        font-size: 3.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 1rem;
+    }
+    section {
+        div {
+            div {
+                div {
+                    margin-top: 2rem;
+                    img {
+                         padding-left: 3rem;
+                    }
+                    div {
+                        p {
+                            color: black;
+                            font-size: 1rem;
+                            font-family: 'Ubuntu', sans-serif;
+                            text-shadow: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

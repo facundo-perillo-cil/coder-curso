@@ -1,10 +1,14 @@
-/*base*/
-@import '../SCSS/base/variables';
-@import '../SCSS/base/extends';
-
-
-/*componenetes*/
+/*reseteo*/
 @import  '../SCSS/components/reseteo';
+/*header*/
 @import '../SCSS/components/header';
+/*footer*/
 @import '../SCSS/components/footer';
+/*main-index*/
 @import '../SCSS/components/main-index';
+/*main-nosotros*/
+@import '../SCSS/components/main-nosotros';
+/*main-servicio*/
+@import '../SCSS/components/main-servicio';
+/*main-staff*/
+@import '../SCSS/components/main-staff';

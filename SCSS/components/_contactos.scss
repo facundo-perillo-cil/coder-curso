@@ -1,0 +1,11 @@
+@import '../base/mapas'
+main {
+    h1{
+
+    }
+    section {
+        h2 {
+           color: map-get($contacto, font-color);
+        }
+    }
+}
