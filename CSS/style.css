@@ -142,3 +142,16 @@ main section div div div div h5 {
 main section div div div div p {
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif; }
+
+/*main-contacto*/
+.main-contacto h1 {
+  color: #E5EFC1;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif; }
+
+.main-contacto section h2 {
+  color: #E5EFC1;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif; }
