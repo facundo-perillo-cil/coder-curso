@@ -1,21 +1,28 @@
-@import '../base/extends';
-@import '../base/variables';
 
 .main-nosotros{
-    @extend %resto-main;
+    color: #E5EFC1;
+    text-shadow: 3px 3px black;
+    background-image: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.529),rgba(0, 0, 0, 0.487)), url(../Img/fondo-nosotros.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
     section {
-        div {
-            div { 
-                h1 {
-                    font-size: 3.5rem;
-                    font-family: 'Ubuntu', sans-serif;
-                }
-                p{
-                    font-size: 1rem;
-                    font-family: 'Ubuntu', sans-serif;
-                    text-shadow: none; 
-                }
-            }
+        margin-left: 1rem;
+        h1 {
+            font-size: 3.5rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        p{
+            font-size: 1rem;
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: none; 
         }
     }
+    .slide {
+        width: 70%;
+        padding-bottom: 0.5rem;
+    }           
 }

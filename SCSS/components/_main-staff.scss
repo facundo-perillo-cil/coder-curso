@@ -1,8 +1,17 @@
-main{
-    h2 {
+@import '../base/extends';
+@import '../base/variables';
+
+.main-staff {
+    @extend %resto-main;
+    height: auto;
+    h1 {
+        font-size: 3.5rem;
+        font-family: 'Ubuntu', sans-serif;
         margin-left: 1rem;
     }
-    section {
+    .slide-staff {
+        width: 50%;
+        padding-bottom: 0,5rem;
         div {
             div {
 
@@ -17,10 +26,10 @@ main{
                              font-size: 2rem;
                              font-family: 'Ubuntu', sans-serif;
                              color: black;
-                             text-shadow: none;
+                             text-shadow: none
                          }
                          p {
-                            font-size: 1rem;
+                            font-size: 1.5rem;
                             font-family: 'Ubuntu', sans-serif;
                          }
                     }
