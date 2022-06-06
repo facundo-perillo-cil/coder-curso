@@ -14,11 +14,21 @@
              font-family: 'Ubuntu', sans-serif;
          }
      }
-     .form {
-         width: 30%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
+     .input {
+         .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                background-color: #091c1fd5;
+                border: solid 0,2rem #091c1f79;
+                color: white;
+            }
+            textarea {
+                background-color: #091c1f9f;
+                color: white;
+            }
+         }
+         
      }
  }

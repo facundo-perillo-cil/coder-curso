@@ -14,4 +14,17 @@
             text-shadow: none;   
         }   
     }
+    .boton {
+        margin-top: 3rem;
+        a {
+            text-decoration: none;
+            div {
+                margin-bottom: 1rem;
+                button {
+                    background-color: #1a3c40be;
+                    border: solid 0,2rem #091c1ffb;
+                }
+            }
+        }
+    }
 }

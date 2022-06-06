@@ -9,7 +9,9 @@
         width: 6rem;
         height: 6rem;
         @include tablet {
-            img:none
+            .img-logo{
+                display: none;
+            }
         }
     }
     ul {

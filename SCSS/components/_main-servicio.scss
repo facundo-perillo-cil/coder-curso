@@ -6,25 +6,23 @@ main {
         margin-left: 1rem;
     }
     section {
-        div {
-            div {
-                div {
-                    margin-top: 2rem;
-                    img {
-                         padding-left: 3rem;
-                    }
-                    div {
-                        p {
-                            color: black;
-                            font-size: 1rem;
-                            font-family: 'Ubuntu', sans-serif;
-                            text-shadow: none;
-                            text-align: center;
-                        }
-                    }
-                }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 20%;
+                height: auto;
+                background-color: white ;
+                padding: 1rem;
+                margin: 1rem;
             }
         }
-        
+        div {
+            h3 {
+                position: absolute;
+                bottom: 2rem;
+            }
+        }
     }
 }

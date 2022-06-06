@@ -24,9 +24,9 @@ header .bg-nav {
   .foot .img-logo {
     width: 6rem;
     height: 6rem; }
-    @media screen and (min-width: 768px) {
-      .foot .img-logo {
-        img: none; } }
+    @media screen and (max-width: 780px) {
+      .foot .img-logo .img-logo {
+        display: none; } }
   .foot ul {
     list-style: none; }
     .foot ul li {
@@ -49,14 +49,14 @@ header .bg-nav {
     .foot div a .foot-img {
       width: 2rem;
       height: 2rem; }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     .foot {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 1rem; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 780px) {
     .foot {
       display: flex;
       justify-content: space-around; } }
@@ -94,6 +94,16 @@ main, .main-staff {
     font-family: 'Ubuntu', sans-serif;
     text-shadow: none; }
 
+.main .boton {
+  margin-top: 3rem; }
+  .main .boton a {
+    text-decoration: none; }
+    .main .boton a div {
+      margin-bottom: 1rem; }
+      .main .boton a div button {
+        background-color: #1a3c40be;
+        border: solid 0,2rem #091c1ffb; }
+
 /*main-nosotros*/
 .main-nosotros {
   color: #E5EFC1;
@@ -109,14 +119,47 @@ main, .main-staff {
     margin-left: 1rem; }
     .main-nosotros section h1 {
       font-size: 3.5rem;
-      font-family: 'Ubuntu', sans-serif; }
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center; }
     .main-nosotros section p {
       font-size: 1rem;
       font-family: 'Ubuntu', sans-serif;
-      text-shadow: none; }
-  .main-nosotros .slide {
-    width: 70%;
-    padding-bottom: 0.5rem; }
+      text-shadow: none;
+      text-align: center; }
+  .main-nosotros .slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden; }
+    .main-nosotros .slider .carrusel {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: carrusel 20s linear infinite alternate; }
+      .main-nosotros .slider .carrusel li {
+        list-style: none;
+        width: 100%; }
+        .main-nosotros .slider .carrusel li .img-carrusel {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+
+@keyframes carrusel {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
 
 /*main-servicio*/
 main h2 {
@@ -124,16 +167,20 @@ main h2 {
   font-family: 'Ubuntu', sans-serif;
   margin-left: 1rem; }
 
-main section div div div {
-  margin-top: 2rem; }
-  main section div div div img {
-    padding-left: 3rem; }
-  main section div div div div p {
-    color: black;
-    font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
-    text-shadow: none;
-    text-align: center; }
+main section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  main section div img {
+    width: 20%;
+    height: auto;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem; }
+
+main section div h3 {
+  position: absolute;
+  bottom: 2rem; }
 
 /*main-staff*/
 .main {
@@ -164,19 +211,28 @@ main, .main-staff {
     font-size: 3.5rem;
     font-family: 'Ubuntu', sans-serif;
     margin-left: 1rem; }
-  .main-staff .slide-staff {
-    width: 50%;
-    padding-bottom: 0,5rem; }
-    .main-staff .slide-staff div div div div h5 {
-      font-size: 2rem;
-      font-family: 'Ubuntu', sans-serif;
-      color: black;
-      text-shadow: none;
-      background-color: #1a3c4054; }
-    .main-staff .slide-staff div div div div p {
-      font-size: 1.5rem;
-      font-family: 'Ubuntu', sans-serif;
-      background-color: #1a3c4041; }
+  .main-staff .slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden; }
+    .main-staff .slider .carrusel {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: carrusel 20s linear infinite alternate; }
+      .main-staff .slider .carrusel li {
+        list-style: none;
+        width: 100%; }
+        .main-staff .slider .carrusel li .img-carrusel {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+        .main-staff .slider .carrusel li .nombre {
+          text-align: center;
+          font-size: 2rem;
+          position: absolute;
+          bottom: 0;
+          top: 1rem; }
 
 /*main-contacto*/
 .main-contacto h1 {
@@ -191,9 +247,14 @@ main, .main-staff {
   text-align: center;
   font-family: 'Ubuntu', sans-serif; }
 
-.main-contacto .form {
-  width: 30%;
+.main-contacto .input .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
+  .main-contacto .input .info input {
+    background-color: #091c1fd5;
+    border: solid 0,2rem #091c1f79;
+    color: white; }
+  .main-contacto .input .info textarea {
+    background-color: #091c1f9f;
+    color: white; }
