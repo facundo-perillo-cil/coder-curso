@@ -9,9 +9,10 @@
         width: 6rem;
         height: 6rem;
         @include tablet {
-            .img-logo{
-                display: none;
-            }
+            display: none;
+        }
+        @include mobile {
+            display: none;
         }
     }
     ul {

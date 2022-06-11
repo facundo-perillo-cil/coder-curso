@@ -1,30 +1,40 @@
 
 .main-nosotros{
-    color: #E5EFC1;
-    text-shadow: 3px 3px black;
-    background-image: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.529),rgba(0, 0, 0, 0.487)), url(../Img/fondo-nosotros.jpg);
-    background-repeat: none;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
+    @extend %resto-main;
+    @include mobile {
+        padding-top: 10rem;
+    }
+    @include tablet {
+        padding-top: 10rem;
+    }
     section {
         margin-left: 1rem;
         h1 {
             font-size: 3.5rem;
             font-family: 'Ubuntu', sans-serif;
             text-align: center;
+            @include mobile {
+                font-size: 2rem;
+            }
+            @include tablet {
+                font-size: 2.5rem;
+            }
         }
         p{
             font-size: 1rem;
             font-family: 'Ubuntu', sans-serif;
             text-shadow: none; 
             text-align: center;
+            @include mobile {
+                font-size: 0.5rem;
+            }
+            @include tablet {
+                font-size: 0.7rem;
+            }
         }
     }
     .slider {
-        width: 60%;
+        width: 50%;
         margin: auto;
         overflow: hidden;
         .carrusel {

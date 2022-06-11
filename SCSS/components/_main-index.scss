@@ -7,11 +7,27 @@
         h1 {
             font-size: $font-size-titulo;
             font-family: $font-family-general;
+            @include mobile {
+                    font-size: 3rem;
+                    text-align: center
+            };
+            @include tablet {
+                font-size: 3.5rem;
+                text-align: center
+            };
            }
         p {
             font-size: 1.5rem;
             font-family: 'Ubuntu', sans-serif;
-            text-shadow: none;   
+            text-shadow: none; 
+            @include mobile {
+                font-size: 1rem;
+                text-align: center;
+            }
+            @include tablet {
+                font-size: 1.5rem;
+                text-align: center;
+            }  
         }   
     }
     .boton {

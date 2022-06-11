@@ -24,8 +24,11 @@ header .bg-nav {
   .foot .img-logo {
     width: 6rem;
     height: 6rem; }
-    @media screen and (max-width: 780px) {
-      .foot .img-logo .img-logo {
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .foot .img-logo {
+        display: none; } }
+    @media screen and (max-width: 480px) {
+      .foot .img-logo {
         display: none; } }
   .foot ul {
     list-style: none; }
@@ -56,7 +59,7 @@ header .bg-nav {
       align-items: center;
       justify-content: center;
       padding: 1rem; } }
-  @media screen and (max-width: 780px) {
+  @media screen and (min-width: 481px) and (max-width: 780px) {
     .foot {
       display: flex;
       justify-content: space-around; } }
@@ -73,7 +76,7 @@ header .bg-nav {
   width: 100%;
   height: 80vh; }
 
-main, .main-staff {
+.main-nosotros, main, .main-staff, .main-contacto {
   color: #E5EFC1;
   text-shadow: 3px 3px black;
   background-image: none;
@@ -89,10 +92,26 @@ main, .main-staff {
   .main div h1 {
     font-size: 5rem;
     font-family: "Ubuntu", sans-serif; }
+    @media screen and (max-width: 480px) {
+      .main div h1 {
+        font-size: 3rem;
+        text-align: center; } }
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .main div h1 {
+        font-size: 3.5rem;
+        text-align: center; } }
   .main div p {
     font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
     text-shadow: none; }
+    @media screen and (max-width: 480px) {
+      .main div p {
+        font-size: 1rem;
+        text-align: center; } }
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .main div p {
+        font-size: 1.5rem;
+        text-align: center; } }
 
 .main .boton {
   margin-top: 3rem; }
@@ -105,43 +124,54 @@ main, .main-staff {
         border: solid 0,2rem #091c1ffb; }
 
 /*main-nosotros*/
-.main-nosotros {
-  color: #E5EFC1;
-  text-shadow: 3px 3px black;
-  background-image: none;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.487)), url(../Img/fondo-nosotros.jpg);
-  background-repeat: none;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto; }
-  .main-nosotros section {
-    margin-left: 1rem; }
-    .main-nosotros section h1 {
-      font-size: 3.5rem;
-      font-family: 'Ubuntu', sans-serif;
-      text-align: center; }
-    .main-nosotros section p {
-      font-size: 1rem;
-      font-family: 'Ubuntu', sans-serif;
-      text-shadow: none;
-      text-align: center; }
-  .main-nosotros .slider {
-    width: 60%;
-    margin: auto;
-    overflow: hidden; }
-    .main-nosotros .slider .carrusel {
-      display: flex;
-      padding: 0;
-      width: 400%;
-      animation: carrusel 20s linear infinite alternate; }
-      .main-nosotros .slider .carrusel li {
-        list-style: none;
-        width: 100%; }
-        .main-nosotros .slider .carrusel li .img-carrusel {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
+@media screen and (max-width: 480px) {
+  .main-nosotros {
+    padding-top: 10rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 780px) {
+  .main-nosotros {
+    padding-top: 10rem; } }
+
+.main-nosotros section {
+  margin-left: 1rem; }
+  .main-nosotros section h1 {
+    font-size: 3.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      .main-nosotros section h1 {
+        font-size: 2rem; } }
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .main-nosotros section h1 {
+        font-size: 2.5rem; } }
+  .main-nosotros section p {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: none;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      .main-nosotros section p {
+        font-size: 0.5rem; } }
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .main-nosotros section p {
+        font-size: 0.7rem; } }
+
+.main-nosotros .slider {
+  width: 50%;
+  margin: auto;
+  overflow: hidden; }
+  .main-nosotros .slider .carrusel {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: carrusel 20s linear infinite alternate; }
+    .main-nosotros .slider .carrusel li {
+      list-style: none;
+      width: 100%; }
+      .main-nosotros .slider .carrusel li .img-carrusel {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
 
 @keyframes carrusel {
   0% {
@@ -167,16 +197,25 @@ main h2 {
   font-family: 'Ubuntu', sans-serif;
   margin-left: 1rem; }
 
-main section {
+main .section-main {
   display: flex;
-  justify-content: space-between; }
-  main section div {
-    margin: 4rem; }
-    main section div div p {
+  justify-content: space-between;
+  justify-content: center; }
+  @media screen and (max-width: 480px) {
+    main .section-main {
+      display: contents;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem; } }
+  main .section-main .card-div {
+    margin: 3rem; }
+    @media screen and (max-width: 480px) {
+      main .section-main .card-div {
+        margin: auto;
+        margin-top: 1rem; } }
+    main .section-main .card-div .card-parrafo .parrafo {
       color: black;
-      text-shadow: none;
-      text-align: center;
-      font-size: 1.1rem; }
+      text-shadow: none; }
 
 /*main-staff*/
 .main {
@@ -190,7 +229,7 @@ main section {
   width: 100%;
   height: 80vh; }
 
-main, .main-staff {
+.main-nosotros, main, .main-staff, .main-contacto {
   color: #E5EFC1;
   text-shadow: 3px 3px black;
   background-image: none;
@@ -210,14 +249,33 @@ main, .main-staff {
   .main-staff section div {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 480px) {
+      .main-staff section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media screen and (min-width: 481px) and (max-width: 780px) {
+      .main-staff section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .main-staff section div img {
       width: 30rem;
-      height: 20rem; }
+      height: 20rem;
+      padding: 1rem; }
     .main-staff section div div {
       display: flex;
       flex-direction: column;
       margin: 4rem;
       text-align: center; }
+      .main-staff section div div h2 {
+        font-size: 3rem; }
+        @media screen and (max-width: 480px) {
+          .main-staff section div div h2 {
+            font-size: 2rem; } }
+        @media screen and (min-width: 481px) and (max-width: 780px) {
+          .main-staff section div div h2 {
+            font-size: 2.5rem; } }
 
 /*main-contacto*/
 .main-contacto h1 {

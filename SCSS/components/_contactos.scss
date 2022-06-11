@@ -1,5 +1,6 @@
 @import '../base/mapas';
  .main-contacto {
+    @extend %resto-main;
      h1 {
         color: map-get($contacto, font-color);
         font-size: 3rem;
