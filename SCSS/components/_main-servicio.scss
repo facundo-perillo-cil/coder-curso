@@ -13,13 +13,13 @@ main {
         display: contents;
         flex-direction: column;
         align-items: center;
-        margin-top: 3rem;
     }
     .card-div {
         margin: 3rem;
         @include mobile {
              margin: auto;
              margin-top: 1rem;
+             
         }
         .card-parrafo {
             .parrafo {
